@@ -12,6 +12,11 @@ int main(void)
 	pAdd = pAdd + 1;
 
 	printf("\n address is %p and value %x", pAdd, *pAdd);
+	
+	pAdd = pAdd + 1;
 
+	printf("\n address is %p and value %x", pAdd, *pAdd);
+
+	return 0;
 }
 
