@@ -7,15 +7,15 @@ int main(void)
 
 	printf("\n address is %p", pAdd);			// print the 1st pointer address
 	*pAdd = 255;						// modify 1st data address "01" with 255dec or ffhex
-	printf("\n address is %p and value %x", pAdd, *pAdd);	// print the first address and its new value
+	printf("\n address is %p and value %x", pAdd, *pAdd);	// print the first address and its new value => 0061FF10
 	
 	pAdd = pAdd + 1;					// switch in 1 byte to the next address
 
-	printf("\n address is %p and value %x", pAdd, *pAdd);	// print the next address and its value which hasn't changed
+	printf("\n address is %p and value %x", pAdd, *pAdd);	// print the next address and its value which hasn't changed => FF
 	
-	pAdd = pAdd + 1;					// switch in 1 byte to the next address again
+	pAdd = pAdd + 1;					// switch in 1 byte to the next address again => 540
 
-	printf("\n address is %p and value %x", pAdd, *pAdd);   // once more, print the next address and its value which hasn't changed
+	printf("\n address is %p and value %x", pAdd, *pAdd);   // once more, print the next address and its value which hasn't changed => 6906
 
 	return 0;
 }
