@@ -18,7 +18,8 @@ int main(void)
 	pAdd = pAdd + 1;					// switch in 1 byte to the next address again => 540
 
 	printf("\n address is %p and value %x", pAdd, *pAdd);   // once more, print the next address and its value which hasn't changed => 6906
-
+	
+	my_funct();
 	return 0;
 }
 
