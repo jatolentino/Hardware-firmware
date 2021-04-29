@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+void my_funct(void);
+
 int main(void)
 {
 	long long int dat = 0xa0b3690605401601; 		// input hex data
