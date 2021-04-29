@@ -22,4 +22,6 @@ int main(void)
 
 void my_funct(void){
 	while(getchar() != '\n'){
-	}
+	};
+	getchar();
+}
