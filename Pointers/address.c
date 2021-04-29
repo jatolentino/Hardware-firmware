@@ -20,6 +20,7 @@ int main(void)
 	printf("\n address is %p and value %x", pAdd, *pAdd);   // once more, print the next address and its value which hasn't changed => 6906
 	
 	my_funct();
+	
 	return 0;
 }
 
