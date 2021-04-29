@@ -21,7 +21,8 @@ int main(void)
 }
 
 void my_funct(void){
+	printf("Input enter to exit");
 	while(getchar() != '\n'){
-	};
+	}
 	getchar();
 }
