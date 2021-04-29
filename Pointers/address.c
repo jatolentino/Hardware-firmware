@@ -20,3 +20,6 @@ int main(void)
 	return 0;
 }
 
+void my_funct(void){
+	while(getchar() != '\n'){
+	}
