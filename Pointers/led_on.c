@@ -10,9 +10,11 @@ int main(void)
 	// 1. Turning the clock on bus HBN1
 	*pClk |= 0x08;
 	
-	// 2. Setting the register to 
+	// 2. Setting the mode port the GPIOD
 	*pPortD &= 0xFCFFFFFF;
 	*pPortD |= 0x01000000;
+	
+	// 3. Configure to ouput mode
 	*pPortDout |= 0x1000;
 	//for(;;);
 	while(1);
