@@ -12,5 +12,6 @@ int main(void)
 	*pPortD &= 0xFCFFFFFF;
 	*pPortD |= 0x01000000;
 	*pPortDout |= 0x1000;
-	
+	//for(;;);
+	while(1);
 }
