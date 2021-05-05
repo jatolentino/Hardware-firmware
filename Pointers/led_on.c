@@ -8,7 +8,7 @@ int main(void)
 	uint32_t *pPortDout = (uint32_t*)0x40020C14; // port to output
 
 	// 1. Turning the clock on bus HBN1
-	*pClk |= 0x08;
+	*pClk |= 0x08; // bitwise flushleft operator, no need to user masked value, pClk | (1<<4)
 	
 	// 2. Setting the mode port the GPIOD
 	*pPortD &= 0xFCFFFFFF;
