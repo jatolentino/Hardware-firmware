@@ -11,11 +11,11 @@ int main(void)
 	*pClk |= 0x08; // bitwise flushleft operator, no need to user masked value, pClk |= (1<<3)
 	
 	// 2. Setting the mode port the GPIOD
-	*pPortD &= 0xFCFFFFFF; // pPoerD &= ~(3<<24)
-	*pPortD |= 0x01000000; // pPoerD |= (1<<24)
+	*pPortD &= 0xFCFFFFFF; // pPortD &= ~(3<<24)
+	*pPortD |= 0x01000000; // pPortD |= (1<<24)
 	
 	// 3. Configure to ouput mode
-	*pPortDout |= 0x1000;
-	//for(;;);
+	*pPortDout |= 0x1000;  // pPortDout |= (1<<12)
+	//for(;;);  
 	while(1);
 }
