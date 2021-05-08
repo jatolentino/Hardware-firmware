@@ -23,4 +23,8 @@ int main(void)
 }
 
 void my_func(void){
+	printf("Hit enter to quit");
+	if(getchar() != '\n'){
+	return 0;}
+	getchar();
 }
