@@ -22,3 +22,5 @@ int main(void)
 	while(1);
 }
 
+void my_func(void){
+}
