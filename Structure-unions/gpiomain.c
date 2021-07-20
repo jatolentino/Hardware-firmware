@@ -9,6 +9,6 @@ int main(void)
 		
 	pClk->gpiod_en =1;
 	pPortD->pin_12 = 1;
-	pPortDout->pin12 = 1;  //set pin12 to 1
+	pPortDout->pin12 = 1;  //set pin12 to 1 (led turns on)
 	
 }
