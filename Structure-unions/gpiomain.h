@@ -52,4 +52,25 @@ typedef struct
 	uint32_t pin_14			:1;
 	uint32_t pin_15			:16;
 }GPIOx_ODR_t
+
+typedef struct
+{
+	uint32_t pin_0			:2;
+	uint32_t pin_1			:2;
+	uint32_t pin_2			:2;
+	uint32_t pin_3			:2;
+	uint32_t pin_4			:2;
+	uint32_t pin_5			:2;
+	uint32_t pin_6			:2;
+	uint32_t pin_7			:2;
+	uint32_t pin_8			:2;
+	uint32_t pin_9			:2;
+	uint32_t pin_10			:2;
+	uint32_t pin_11			:2;
+	uint32_t pin_12			:2;
+	uint32_t pin_13			:2;
+	uint32_t pin_14			:2;
+	uint32_t pin_15			:2;
+}GPIOx_MODE_t
+
 #endif
