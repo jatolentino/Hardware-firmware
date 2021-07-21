@@ -40,3 +40,13 @@ void displayElement(struct DataSet *pdata)
 	Data.shortaddr = (packetValue >> 29) & 0x3;
 	Data.addMode = (packetValue >> 31) & 0x1;
 	
+	printf("Scanning each value");
+	printf("crc %x\n",Data.crc);
+	printf("status %x\n",Data.status);
+	printf("payload %x\n",Data.payload);
+	printf("bat %x\n",Data.bat);
+	printf("sensor %x\n",Data.sensor);
+	printf("longAddr %x\n",Data.longAddr);
+	printf("shortAddr %x\n",Data.shortAddr);
+	printf("addrMode %x\n",Data.addrMode);
+}
