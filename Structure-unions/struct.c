@@ -9,7 +9,6 @@ void displayElements(struct DataSet *pdata);
 
 int main(void)
 {
-
 	struct Dataset data;
 	data.data1 = 0x11;
 	data.data2 = 0xFFFFEEEE;
