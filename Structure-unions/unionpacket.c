@@ -24,4 +24,12 @@ int main(void)
 	scanf("%X",&Data.packetValue)
 
 	printf("Scanning each value");
+	printf("crc %x\n",Data.packetFields.crc);
+	printf("status %x\n",Data.packetFields.status);
+	printf("payload %x\n",Data.packetFields.payload);
+	printf("bat %x\n",Data.packetFields.bat);
+	printf("sensor %x\n",Data.packetFields.sensor);
+
 }
+
+
