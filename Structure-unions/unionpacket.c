@@ -35,6 +35,8 @@ int main(void)
 	
 	printf("size of the union in %I64\n",sizeof(packet));
 	
+	while(getchar()!=0);
+	getchat();
 
 }
 
