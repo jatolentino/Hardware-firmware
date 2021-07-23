@@ -17,3 +17,11 @@ union Packet
 	}packetFields;
 }
 
+int main(void)
+{
+	union Packet Data;
+	printf("Enter the 32bit packet value:");
+	scanf("%X",&Data.packetValue)
+
+	printf("Scanning each value");
+}
