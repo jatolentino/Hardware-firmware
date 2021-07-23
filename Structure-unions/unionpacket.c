@@ -37,7 +37,7 @@ int main(void)
 	
 	while(getchar()!=0);
 	getchat();
-
+	return 0;
 }
 
 
