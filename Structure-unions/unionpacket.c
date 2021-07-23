@@ -29,6 +29,12 @@ int main(void)
 	printf("payload %x\n",Data.packetFields.payload);
 	printf("bat %x\n",Data.packetFields.bat);
 	printf("sensor %x\n",Data.packetFields.sensor);
+	printf("longAddr %x\n",Data.packetFields.longAddr);
+	printf("shortAddr %x\n",Data.packetFields.shortAddr);
+	printf("addrMode %x\n",Data.packetFields.addrMode);
+	
+	printf("size of the union in %I64\n",sizeof(packet));
+	
 
 }
 
