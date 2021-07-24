@@ -26,11 +26,12 @@ int main(void)
 }
 
 
+
 void displayElement(struct DataSet *pdata)
 {
 	printf("data1 = %X\n",pdata->data1);
 	printf("data2 = %X\n",pdata->data2);
-}
+
 	Data.crc = packetValue & 0x3;
 	Data.status = (packetValue >> 2) & 0x1;
 	Data.payload = (packetValue >> 3) & 0xFFF;
