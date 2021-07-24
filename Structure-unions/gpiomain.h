@@ -5,7 +5,7 @@
 
 typedef struct
 {
-	uint32_t gpioa_en		:1;
+	uint32_t gpioa_en		:1; //bits assigned
 	uint32_t gpiob_en		:1;
 	uint32_t gpioc_en		:1;
 	uint32_t gpiod_en		:1;
