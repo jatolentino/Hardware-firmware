@@ -26,7 +26,6 @@ int main(void)
 }
 
 
-
 void displayElement(struct DataSet *pdata)
 {
 	printf("data1 = %X\n",pdata->data1);
