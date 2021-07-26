@@ -25,4 +25,7 @@ int main(void)
 		printf("\ntotal even numbers: %u\n",even);
 		wait_input();
 }
-
+void wait_input(void){
+	printf("Please hit enter");
+	
+}
