@@ -27,5 +27,7 @@ int main(void)
 }
 void wait_input(void){
 	printf("Please hit enter");
-	
+	while( getchar() != '\n'){
+	}
+	getchar();
 }
