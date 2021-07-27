@@ -11,7 +11,6 @@ int main(void)
 		printf("ending number should be > starting number\n");
 	}
 	
-	
 	printf("Even numbers are :\n";
 		even = 0;
 
