@@ -21,7 +21,6 @@ int main(void)
 	//for(;;);  
 	while(1);
 }
-
 void my_func(void){
 	printf("Hit enter to quit");
 	if(getchar() != '\n'){
