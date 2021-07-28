@@ -3,8 +3,7 @@
 
 void my_func(void);
 int main(void)
-{
-    /* Loop forever */
+{    /* Loop forever */
 	uint32_t *pClk = (uint32_t*)0x40023830;  // clock register
 	uint32_t *pPortD = (uint32_t*)0x40020C00; // port moude register
 	uint32_t *pPortDout = (uint32_t*)0x40020C14; // port to output
