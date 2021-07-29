@@ -9,7 +9,6 @@ struct Dataset
 }
 
 void displayElements(struct DataSet *pdata);
-
 int main(void)
 {
 	struct Dataset data;
