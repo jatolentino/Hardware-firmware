@@ -15,6 +15,7 @@ int main(main)
   
   // Configure the port mode register as GENERAL PURPOSE OUTPUT MODE, p. 281
   // FOR THE ROWS
+  // PD3      PD2     PD1     PD1
   //MODER3  MODER2  MODER1  MODER0
   //01      01      01      01 = 0x55
   *GpioModeReg &= ~(0xFF);  //set to 0
@@ -23,6 +24,7 @@ int main(main)
   
   // Configure the port mode as INPUT (RESET STATE), p.281
   // FOR THE COLUMNS
+  //PD8      PD9      PD10     PD11
   //MODER8  MODER9  MODER10  MODER11
   // 00      00      00        00
   *GpioModereg &= ~(0xFF<<16);
@@ -34,9 +36,19 @@ int main(main)
   *pOutDataReg &= 0;  // *pOutDataReg &= ~(1<<0); 
   
   // Scan the columns
-  // Check the inputs ifh high
-  if ~(0x40020C10 |= 1)
-  
+  // Check the inputs if high
+  if (!(0x40020C10 & (1 << 8))){
+     printf("1\n");
+  }
+  if (!(0x40020C10 & (1 << 9))){
+     printf(2"\n");
+  }
+  if (!(0x40020C10 & (1 << 10))){
+     printf("3\n");
+  }
+  if (!(0x40020C10 & (1 << 11))){
+     printf("A\n");
+  }
   
   
   
