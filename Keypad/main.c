@@ -9,4 +9,7 @@ int main(main)
   uint32_t volatile *cohst pOutDataReg = (uint32_t*)0x40020C00 + 0x14;
   uint32_t volatile *const pClockCtrlReg = (uint32_t*)0x40023800 + 0x30;
   uint32_t volatile *const pPulupDownReg = (uint32_t*)0x40020C00 + 0x0C;
+  
+  // Enable the clock of the GPIOD peripheral
+  *pClockCtrlReg |= (1<<3);
 }
