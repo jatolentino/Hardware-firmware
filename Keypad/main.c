@@ -1,6 +1,8 @@
 #include <stdint.h>
 #include <stdio.h>
 
+void delay(){
+}
 int main(main)
 {
   //Adding the peripherla registers addresses
@@ -76,7 +78,7 @@ int main(main)
   
   //Make the 3rd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= ~(2<<1);
+  *pOutDataReg &= ~(1<<2);
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("7\n");
@@ -96,7 +98,7 @@ int main(main)
   
   //Make the 3rd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= ~(3<<1)
+  *pOutDataReg &= ~(1<<3)
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("*\n");
