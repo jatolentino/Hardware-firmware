@@ -17,7 +17,7 @@ int main(main)
   //PD03    PD02    PD01    PD0
   //MODER3  MODER2  MODER1  MODER0
   //01      01      01      01 = 0x55
-  *GpioModeReg &= 0x0;
+  *GpioModeReg &= ~(0xff);
   *GpioModeReg |= 0x55;
   
   
