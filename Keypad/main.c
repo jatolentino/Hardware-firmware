@@ -14,7 +14,7 @@ int main(main)
   *pClockCtrlReg |= (1<<3);
   
   // Configure the port mode register as GENERAL PURPOSE OUTPUT MODE, p. 281
-  //       -> Outputs from PD0-PD3
+  // FOR THE ROWS
   //MODER3  MODER2  MODER1  MODER0
   //01      01      01      01 = 0x55
   *GpioModeReg &= ~(0xFF);  //set to 0
@@ -22,9 +22,14 @@ int main(main)
   
   
   // Configure the port mode as Input (reset state), p.281
+  // FOR THE COLUMNS
   //MODER8  MODER9  MODER10  MODER11
   // 00      00      00        00
+  *GpioModereg &= ~(0xFF<<16);
   
-  *GpioModereg &= ~(0xFF<<16)
+  // Set rows to HIGH, binary is 1111 = 0x0F
+  *pOutDataReg |= 0x0F;
+  
+  
    
 }
