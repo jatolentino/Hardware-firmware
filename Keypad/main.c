@@ -56,7 +56,7 @@ int main(main)
   
   //Make the 2nd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= 0;  // *pOutDataReg &= ~(1<<1); 
+  *pOutDataReg &= ~(1<<1);  //
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("4\n");
@@ -76,7 +76,7 @@ int main(main)
   
   //Make the 3rd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= 0;  // *pOutDataReg &= ~(2<<1); 
+  *pOutDataReg &= ~(2<<1);
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("7\n");
@@ -96,7 +96,7 @@ int main(main)
   
   //Make the 3rd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= 0;  // *pOutDataReg &= ~(3<<1); 
+  *pOutDataReg &= ~(3<<1)
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("*\n");
