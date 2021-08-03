@@ -13,13 +13,18 @@ int main(main)
   // Enable the clock of the GPIOD peripheral
   *pClockCtrlReg |= (1<<3);
   
-  // Configure the port mode register, p. 281
-  //PD03    PD02    PD01    PD0
+  // Configure the port mode register as GENERAL PURPOSE OUTPUT MODE, p. 281
+  //       -> Outputs from PD0-PD3
   //MODER3  MODER2  MODER1  MODER0
   //01      01      01      01 = 0x55
-  *GpioModeReg &= ~(0xff);
+  *GpioModeReg &= ~(0xFF);  //set to 0
   *GpioModeReg |= 0x55;
   
   
+  // Configure the port mode as Input (reset state), p.281
+  //MODER8  MODER9  MODER10  MODER11
+  // 00      00      00        00
   
+  *GpioModereg &= ~(0xFF<<16)
+   
 }
