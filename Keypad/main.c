@@ -8,7 +8,7 @@ int main(main)
   //Adding the peripherla registers addresses
   uint32_t volatile *const pGpioModeReg = (uint32_t*)0x40020C00;
   uint32_t volatile *const pInPutDataReg = (uint32_t*)0x40020C00 + 0x10;
-  uint32_t volatile *cohst pOutDataReg = (uint32_t*)0x40020C00 + 0x14;
+  uint32_t volatile *const pOutDataReg = (uint32_t*)0x40020C00 + 0x14;
   uint32_t volatile *const pClockCtrlReg = (uint32_t*)0x40023800 + 0x30;
   uint32_t volatile *const pPullupDownReg = (uint32_t*)0x40020C00 + 0x0C;
   
@@ -35,7 +35,7 @@ int main(main)
   *pOutDataReg |= 0x0F;
   
   // Set 1st ROW to low
-  *pOutDataReg &= 0;  // *pOutDataReg &= ~(1<<0); 
+  *pOutDataReg &= ~(1<<0); //PD0
   
   // Scan the columns
   // Check the inputs if high
@@ -57,8 +57,8 @@ int main(main)
   }
   
   //Make the 2nd row low and all rows high
-  *pOutDataReg |= 0x0F;
-  *pOutDataReg &= ~(1<<1);  //
+  *pOutDataReg |= 0x0F; 
+  *pOutDataReg &= ~(1<<1);  //PD1
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("4\n");
@@ -77,7 +77,7 @@ int main(main)
   }
   
   //Make the 3rd row low and all rows high
-  *pOutDataReg |= 0x0F;
+  *pOutDataReg |= 0x0F;   //PD2
   *pOutDataReg &= ~(1<<2);
   if (!(0x40020C10 & (1 << 8))){
     delay();
@@ -98,7 +98,7 @@ int main(main)
   
   //Make the 3rd row low and all rows high
   *pOutDataReg |= 0x0F;
-  *pOutDataReg &= ~(1<<3)
+  *pOutDataReg &= ~(1<<3)  //PD3
   if (!(0x40020C10 & (1 << 8))){
     delay();
     printf("*\n");
