@@ -49,11 +49,11 @@ int main(main)
   }
   if (!(0x40020C10 & (1 << 10))){  //PD10
     delay(); 
-     printf("3\n");
+    printf("3\n");
   }
   if (!(0x40020C10 & (1 << 11))){  //PD11
-     delay();
-     printf("A\n");
+    delay();
+    printf("A\n");
   }
   
   //Make the 2nd row low and all rows high
