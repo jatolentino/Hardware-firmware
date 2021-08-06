@@ -39,19 +39,19 @@ int main(main)
   
   // Scan the columns
   // Check the inputs if high
-  if (!(0x40020C10 & (1 << 8))){
+  if (!(0x40020C10 & (1 << 8))){  //PD8
     delay(); 
     printf("1\n");
   }
-  if (!(0x40020C10 & (1 << 9))){
+  if (!(0x40020C10 & (1 << 9))){  //PD9
     delay(); 
     printf(2"\n"); 
   }
-  if (!(0x40020C10 & (1 << 10))){
+  if (!(0x40020C10 & (1 << 10))){  //PD10
     delay(); 
      printf("3\n");
   }
-  if (!(0x40020C10 & (1 << 11))){
+  if (!(0x40020C10 & (1 << 11))){  //PD11
      delay();
      printf("A\n");
   }
