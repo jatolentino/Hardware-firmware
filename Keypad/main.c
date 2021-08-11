@@ -102,11 +102,11 @@ int main(main){
 		//Make the 3rd row low and all rows high
 		*pOutDataReg |= 0x0F;
 		*pOutDataReg &= ~(1<<3);  //PD3
-		if (!(0x40020C10 & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){
 		  delay();
 		  printf("*\n");
 		}
-		if (!(0x40020C10 & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){
 		  delay();
 		  printf("0\n");
 		}
