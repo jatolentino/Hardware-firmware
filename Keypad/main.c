@@ -42,7 +42,7 @@ int main(main){
 
 		// Scan the columns
 		// Check the inputs if high
-		if (!(0x40020C10 & (1 << 8))){  //PD8
+		if (!(pInPutDataReg & (1 << 8))){  //PD8
 		  delay();
 		  printf("1\n");
 		}
