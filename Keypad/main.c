@@ -30,7 +30,7 @@ int main(main){
 	//PD8      PD9      PD10     PD11
 	//MODER8  MODER9  MODER10  MODER11
 	// 00      00      00        00
-	*GpioModereg &= ~(0xFF<<16);
+	*pGpioModereg &= ~(0xFF<<16);
 
 
 	while(1){
