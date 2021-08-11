@@ -110,7 +110,7 @@ int main(main){
 		  delay();
 		  printf("0\n");
 		}
-		if (!(0x40020C10 & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){
 		  delay();
 		  printf("#\n");
 		}
