@@ -114,7 +114,7 @@ int main(main){
 		  delay();
 		  printf("#\n");
 		}
-		if (!(0x40020C10 & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){
 		  delay();
 		  printf("D\n");
 		}
