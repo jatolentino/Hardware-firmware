@@ -22,7 +22,7 @@ int main(main){
 	//MODER3  MODER2  MODER1  MODER0
 	//01      01      01      01 = 0x55
 	*pGpioModeReg &= ~(0xFF);  //set to 0
-	*GpioModeReg |= 0x55;
+	*pGpioModeReg |= 0x55;
 
 
 	// Configure the port mode as INPUT (RESET STATE), p.281
