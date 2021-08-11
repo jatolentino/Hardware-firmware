@@ -46,15 +46,15 @@ int main(main){
 		  delay();
 		  printf("1\n");
 		}
-		if (!(0x40020C10 & (1 << 9))){  //PD9
+		if (!(pInPutDataReg & (1 << 9))){  //PD9
 		  delay();
 		  printf("2\n");
 		}
-		if (!(0x40020C10 & (1 << 10))){  //PD10
+		if (!(pInPutDataReg & (1 << 10))){  //PD10
 		  delay();
 		  printf("3\n");
 		}
-		if (!(0x40020C10 & (1 << 11))){  //PD11
+		if (!(pInPutDataReg & (1 << 11))){  //PD11
 		  delay();
 		  printf("A\n");
 		}
@@ -62,19 +62,19 @@ int main(main){
 		//Make the 2nd row low and all rows high
 		*pOutDataReg |= 0x0F;
 		*pOutDataReg &= ~(1<<1);  //PD1
-		if (!(0x40020C10 & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){
 		  delay();
 		  printf("4\n");
 		}
-		if (!(0x40020C10 & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){
 		  delay();
 		  printf("5\n");
 		}
-		if (!(0x40020C10 & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){
 		  delay();
 		  printf("6\n");
 		}
-		if (!(0x40020C10 & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){
 		  delay();
 		  printf("B\n");
 		}
@@ -82,19 +82,19 @@ int main(main){
 		//Make the 3rd row low and all rows high
 		*pOutDataReg |= 0x0F;   //PD2
 		*pOutDataReg &= ~(1<<2);
-		if (!(0x40020C10 & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){
 		  delay();
 		  printf("7\n");
 		}
-		if (!(0x40020C10 & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){
 		  delay();
 		  printf("8\n");
 		}
-		if (!(0x40020C10 & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){
 		  delay();
 		  printf("9\n");
 		}
-		if (!(0x40020C10 & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){
 		  delay();
 		  printf("C\n");
 		}
