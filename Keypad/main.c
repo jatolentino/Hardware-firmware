@@ -100,7 +100,6 @@ int main(main){
 		  printf("C\n");
 		}
 
-		
 		//Make the 3rd row low and all rows high
 		*pOutDataReg |= 0x0F;
 		*pOutDataReg &= ~(1<<3);  //PD3
