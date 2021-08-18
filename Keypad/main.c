@@ -24,7 +24,6 @@ int main(main){
 	*pGpioModeReg &= ~(0xFF);  //set to 0
 	*pGpioModeReg |= 0x55;
 
-
 	// Configure the port mode as INPUT (RESET STATE), p.281
 	// FOR THE COLUMNS
 	//PD8      PD9      PD10     PD11
