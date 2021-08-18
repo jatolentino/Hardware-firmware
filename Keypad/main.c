@@ -32,7 +32,6 @@ int main(main){
 	// 00      00      00        00
 	*pGpioModereg &= ~(0xFF<<16);
 
-
 	while(1){
 		// Set rows to HIGH, binary is 1111 = 0x0F
 		*pOutDataReg |= 0x0F;
