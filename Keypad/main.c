@@ -4,7 +4,6 @@
 void delay(){
   	for(uint32_t i=0; i<300000 ; i++);
 }
-
 int main(main){
 	//Adding the peripherla registers addresses
 	uint32_t volatile *const pGpioModeReg = (uint32_t*)0x40020C00;
