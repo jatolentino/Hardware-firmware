@@ -67,7 +67,7 @@ int main(main){
 		  delay();
 		  printf("5\n");
 		}
-		if (!(pInPutDataReg & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){  //PD10
 		  delay();
 		  printf("6\n");
 		}
@@ -87,7 +87,7 @@ int main(main){
 		  delay();
 		  printf("8\n");
 		}
-		if (!(pInPutDataReg & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){  //PD10
 		  delay();
 		  printf("9\n");
 		}
@@ -107,7 +107,7 @@ int main(main){
 		  delay();
 		  printf("0\n");
 		}
-		if (!(pInPutDataReg & (1 << 10))){
+		if (!(pInPutDataReg & (1 << 10))){  //PD10
 		  delay();
 		  printf("#\n");
 		}
