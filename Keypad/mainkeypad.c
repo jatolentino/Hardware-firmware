@@ -63,7 +63,7 @@ int main(main){
 		  delay();
 		  printf("4\n");
 		}
-		if (!(pInPutDataReg & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){ //PD9
 		  delay();
 		  printf("5\n");
 		}
@@ -83,7 +83,7 @@ int main(main){
 		  delay();
 		  printf("7\n");
 		}
-		if (!(pInPutDataReg & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){ //PD9
 		  delay();
 		  printf("8\n");
 		}
@@ -103,7 +103,7 @@ int main(main){
 		  delay();
 		  printf("*\n");
 		}
-		if (!(pInPutDataReg & (1 << 9))){
+		if (!(pInPutDataReg & (1 << 9))){ //PD9
 		  delay();
 		  printf("0\n");
 		}
