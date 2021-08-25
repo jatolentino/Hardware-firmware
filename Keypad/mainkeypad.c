@@ -91,7 +91,7 @@ int main(main){
 		  delay();
 		  printf("9\n");
 		}
-		if (!(pInPutDataReg & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){  //PD11
 		  delay();
 		  printf("C\n");
 		}
