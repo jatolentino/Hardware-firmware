@@ -71,7 +71,7 @@ int main(main){
 		  delay();
 		  printf("6\n");
 		}
-		if (!(pInPutDataReg & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){  //PD11
 		  delay();
 		  printf("B\n");
 		}
@@ -111,7 +111,7 @@ int main(main){
 		  delay();
 		  printf("#\n");
 		}
-		if (!(pInPutDataReg & (1 << 11))){
+		if (!(pInPutDataReg & (1 << 11))){  //PD11
 		  delay();
 		  printf("D\n");
 		}
