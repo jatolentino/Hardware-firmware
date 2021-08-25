@@ -59,7 +59,7 @@ int main(main){
 		//Make the 2nd row low and all rows high
 		*pOutDataReg |= 0x0F;
 		*pOutDataReg &= ~(1<<1);  //PD1
-		if (!(pInPutDataReg & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){ //PD8
 		  delay();
 		  printf("4\n");
 		}
@@ -79,7 +79,7 @@ int main(main){
 		//Make the 3rd row low and all rows high
 		*pOutDataReg |= 0x0F;   //PD2
 		*pOutDataReg &= ~(1<<2);
-		if (!(pInPutDataReg & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){ //PD8
 		  delay();
 		  printf("7\n");
 		}
@@ -99,7 +99,7 @@ int main(main){
 		//Make the 3rd row low and all rows high
 		*pOutDataReg |= 0x0F;
 		*pOutDataReg &= ~(1<<3);  //PD3
-		if (!(pInPutDataReg & (1 << 8))){
+		if (!(pInPutDataReg & (1 << 8))){ //PD8
 		  delay();
 		  printf("*\n");
 		}
