@@ -10,7 +10,7 @@ int main(main){
 	uint32_t volatile *const pInPutDataReg = (uint32_t*)0x40020C00 + 0x10; // configure register as input 
 	uint32_t volatile *const pOutDataReg = (uint32_t*)0x40020C00 + 0x14; //configure register as output
 	uint32_t volatile *const pClockCtrlReg = (uint32_t*)0x40023800 + 0x30; // set clock register AHN1EN
-	uint32_t volatile *const pPullupDownReg = (uint32_t*)0x40020C00 + 0x0C;
+	uint32_t volatile *const pPullupDownReg = (uint32_t*)0x40020C00 + 0x0C; // configure the pull-up register
 
 	// Enable the clock of the GPIOD peripheral
 	*pClockCtrlReg |= (1<<3);
