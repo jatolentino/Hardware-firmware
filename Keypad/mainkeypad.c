@@ -7,7 +7,7 @@ void delay(){
 int main(main){
 	//Adding the peripherla registers addresses
 	uint32_t volatile *const pGpioModeReg = (uint32_t*)0x40020C00; // choosing the PIN mode
-	uint32_t volatile *const pInPutDataReg = (uint32_t*)0x40020C00 + 0x10;
+	uint32_t volatile *const pInPutDataReg = (uint32_t*)0x40020C00 + 0x10; // configure register as input 
 	uint32_t volatile *const pOutDataReg = (uint32_t*)0x40020C00 + 0x14;
 	uint32_t volatile *const pClockCtrlReg = (uint32_t*)0x40023800 + 0x30;
 	uint32_t volatile *const pPullupDownReg = (uint32_t*)0x40020C00 + 0x0C;
