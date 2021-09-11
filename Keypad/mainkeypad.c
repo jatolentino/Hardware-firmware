@@ -1,7 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
 
-
 void delay(){
   	for(uint32_t i=0; i<300000 ; i++);
 }
