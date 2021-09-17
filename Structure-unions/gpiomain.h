@@ -74,4 +74,3 @@ typedef struct
 }GPIOx_MODE_t
 
 #endif
-
