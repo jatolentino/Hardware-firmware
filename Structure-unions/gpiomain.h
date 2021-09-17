@@ -3,6 +3,7 @@
 
 #include<stdint.h>
 
+
 typedef struct
 {
 	uint32_t gpioa_en		:1; //bits assigned
