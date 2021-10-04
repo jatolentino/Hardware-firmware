@@ -1,6 +1,5 @@
 #include <stdint.h>
 //#include <stdio.h>
-
 void my_func(void);
 int main(void)
 {    /* Loop forever */
