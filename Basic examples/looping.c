@@ -31,4 +31,3 @@ void wait_input(void){
 	}
 	getchar();
 }
-     
