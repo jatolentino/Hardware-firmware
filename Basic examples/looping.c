@@ -3,7 +3,7 @@
 void wait_input(void);
 int main(void)
 {
-	
+
 	int32_t start_num, end_num, even;
 	printf("Enter starting and ending memebers(give space between 2 nos):");
 	scanf("%d %d", &start_num,&end_num)
